@@ -1,0 +1,103 @@
+package exercise1;
+
+/*
+
+Print the area and circumference of a circle, given its radius.
+*/
+
+public class CircleComputation {  // Save as "CircleComputation.java"
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		// Declare 3 double variables to hold radius, area and circumference.
+		// A "double" holds floating-point number with an optional fractional part.
+		double radius, area, circumference;
+		
+		// Declare a double to hold PI.
+		// Declare as "final" to specify that its value cannot be changed (i.e. constant).
+		final double PI = 3.14159265;
+
+		// Assign a value to radius. (We shall read in the value from the keyboard later.)
+		radius = 1.2;
+		
+		// Compute area and circumference
+		area = radius * radius * PI;
+		circumference = 2.0 * radius * PI;
+
+		// Print results
+		System.out.print("The radius is "); // Print description
+		System.out.println(radius); // Print the value stored in the variable
+		System.out.print("The area is ");
+		System.out.println(area);
+		System.out.print("The circumference is ");
+		System.out.println(circumference);
+
+	}
+
+}
+
+
+
+
+
+package exercise1;
+
+public class RectangleComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		double length, width, area, perimeter;
+		
+		length = 28.5;
+		width = 15.0;
+		
+		//Area = l x w
+		//Perimeter = l + l + w + w
+		
+		area = length * width;
+		perimeter = length + length + width + width;
+		
+		System.out.println("The area of rectangle is " +area);
+		System.out.println("The perimeter of rectangle is " +perimeter);
+		
+
+	}
+
+}
+
+
+
+
+
+package exercise1;
+
+public class CylinderComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+        double radius, height, surfaceArea, baseArea, volume;
+        
+        final double PI = 3.14159265; 
+		
+		radius = 2.3;
+		height = 6.5;
+		
+		//Volume = πrrh
+		//Surface area = 2πrh+2πrr
+		//Base area = πrr
+		
+		surfaceArea = (2 * PI * radius * height) + (2 * PI * radius * radius);
+		baseArea = radius * radius * PI;
+		volume = PI * radius * height;
+		
+		System.out.println("The surface area of cylinder is " +surfaceArea);
+		System.out.println("The base area of cylinder is " +baseArea);
+		System.out.println("The volume of cylinder is " +volume);
+		
+
+	}
+
+}
